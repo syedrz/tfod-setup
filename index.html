@@ -323,8 +323,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#paste-model-foler-into-research-folder" class="md-nav__link">
-    Paste model foler into research folder
+  <a href="#paste-ssd-or-fasterrcnn-folder-or-any-other-model-downloaded-from-model-zoo-into-research-folder-" class="md-nav__link">
+    Paste SSD or fasterRCNN folder or any other model downloaded from model zoo into research folder-
   </a>
   
 </li>
@@ -344,11 +344,11 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#changes-to-be-maid-in-config-file-are-highlighted-below-" class="md-nav__link">
-    Changes to be maid in config file are highlighted below-
+  <a href="#changes-to-be-made-in-config-file-are-highlighted-below-" class="md-nav__link">
+    Changes to be made in config file are highlighted below-
   </a>
   
-    <nav class="md-nav" aria-label="Changes to be maid in config file are highlighted below-">
+    <nav class="md-nav" aria-label="Changes to be made in config file are highlighted below-">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -385,8 +385,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#copy-deplyment-and-nets-folder-from-researchslim-into-research" class="md-nav__link">
-    Copy deplyment and nets folder from research/slim into research
+  <a href="#copy-deployment-and-nets-folder-from-researchslim-into-research" class="md-nav__link">
+    Copy deployment and nets folder from research/slim into research
   </a>
   
 </li>
@@ -531,8 +531,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#paste-model-foler-into-research-folder" class="md-nav__link">
-    Paste model foler into research folder
+  <a href="#paste-ssd-or-fasterrcnn-folder-or-any-other-model-downloaded-from-model-zoo-into-research-folder-" class="md-nav__link">
+    Paste SSD or fasterRCNN folder or any other model downloaded from model zoo into research folder-
   </a>
   
 </li>
@@ -552,11 +552,11 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#changes-to-be-maid-in-config-file-are-highlighted-below-" class="md-nav__link">
-    Changes to be maid in config file are highlighted below-
+  <a href="#changes-to-be-made-in-config-file-are-highlighted-below-" class="md-nav__link">
+    Changes to be made in config file are highlighted below-
   </a>
   
-    <nav class="md-nav" aria-label="Changes to be maid in config file are highlighted below-">
+    <nav class="md-nav" aria-label="Changes to be made in config file are highlighted below-">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -593,8 +593,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#copy-deplyment-and-nets-folder-from-researchslim-into-research" class="md-nav__link">
-    Copy deplyment and nets folder from research/slim into research
+  <a href="#copy-deployment-and-nets-folder-from-researchslim-into-research" class="md-nav__link">
+    Copy deployment and nets folder from research/slim into research
   </a>
   
 </li>
@@ -634,7 +634,7 @@
 <p><a href="https://github.com/tensorflow/models/tree/v1.13.0">Download</a> v1.13.0 model</p>
 </li>
 <li>
-<p><a href="http://download.tensorflow.org/models/object_detection/faster_rcnn_inception_v2_coco_2018_01_28.tar.gz">Download</a>  faster_rcnn_inception_v2_coco or any other model of your choice</p>
+<p><a href="http://download.tensorflow.org/models/object_detection/faster_rcnn_inception_v2_coco_2018_01_28.tar.gz">Download</a>  faster_rcnn_inception_v2_coco or ssd_mobilenet_v1_coco_2018_01_28 or any other model of your choice</p>
 </li>
 <li>
 <p><a href="https://drive.google.com/file/d/12F5oGAuQg7qBM_267TCMt_rlorV-M7gf/view?usp=sharing">Download</a> Dataset &amp; utils</p>
@@ -643,7 +643,10 @@
 <p><a href="https://tzutalin.github.io/labelImg/">Download</a> labelImg tool</p>
 </li>
 </ol>
-<p>extract all the above zip files into a tfod folder</p>
+<p>before extraction your shoud have a the following compressed files - </p>
+<p><img alt="zipFiles" src="img/zipFiles.png" /></p>
+<p>extract all the above zip files into a tfod folder and remove the compressed files. Now you should have the following folders -</p>
+<p><img alt="firstExtaction" src="img/firstExtaction.png" /></p>
 <h2 id="creating-virtual-env-using-conda">Creating virtual env using conda</h2>
 <div class="admonition note">
 <p class="admonition-title">Commands</p>
@@ -665,10 +668,9 @@ for latest python version
 
 <hr />
 <h2 id="for-protobuff-to-py-conversion-download-from-">For protobuff to py conversion download from -</h2>
-<p><a href="https://github.com/protocolbuffers/protobuf/releases/download/v3.11.0/protoc-3.11.0-win64.zip">here</a> for windows</p>
-<div class="highlight"><pre><span></span><code>cd C:\tensorflow1\models\research
-</code></pre></div>
-
+<p>For windows -&gt; <a href="https://github.com/protocolbuffers/protobuf/releases/download/v3.11.0/protoc-3.11.0-win64.zip">download</a></p>
+<p>Open a commmand line and cd to research folder</p>
+<p>Now in research folder run the following command-</p>
 <h2 id="linux-mac">linux mac</h2>
 <div class="highlight"><pre><span></span><code>protoc object_detection/protos/*.proto --python_out=.
 </code></pre></div>
@@ -682,10 +684,13 @@ for latest python version
 </code></pre></div>
 
 <h2 id="paste-all-things-present-in-utils-into-research-folder">Paste all things present in utils into research folder</h2>
-<h2 id="paste-model-foler-into-research-folder">Paste model foler into research folder</h2>
-<p>Now cd to research folder and run the following python file -
+<p>Following are the files and folder present in the utils folder-</p>
+<p><img alt="utils folder structure" src="img/underUtilsFolder.png" /></p>
+<h2 id="paste-ssd-or-fasterrcnn-folder-or-any-other-model-downloaded-from-model-zoo-into-research-folder-">Paste SSD or fasterRCNN folder or any other model downloaded from model zoo into research folder-</h2>
+<p>Now cd to research folder and run the following python file -</p>
 <div class="highlight"><pre><span></span><code>python xml_to_csv.py
-</code></pre></div></p>
+</code></pre></div>
+
 <h2 id="run-the-following-to-generate-train-and-test-records">Run the following to generate train and test records</h2>
 <div class="highlight"><pre><span></span><code>python generate_tfrecord.py --csv_input=images/train_labels.csv --image_dir=images/train --output_path=train.record
 </code></pre></div>
@@ -694,7 +699,7 @@ for latest python version
 </code></pre></div>
 
 <h2 id="copy-from-researchobject_detectionsamplesconfig-faster_rcnn_inception_v2_cococonfig-into-researchtraining">Copy from research/object_detection/samples/config/ faster_rcnn_inception_v2_coco.config into research/training</h2>
-<h2 id="changes-to-be-maid-in-config-file-are-highlighted-below-">Changes to be maid in config file are highlighted below-</h2>
+<h2 id="changes-to-be-made-in-config-file-are-highlighted-below-">Changes to be made in config file are highlighted below-</h2>
 <h3 id="update-no-of-classes-">Update no. of classes-</h3>
 <div class="highlight"><pre><span></span><code>model {
   ssd {
@@ -742,10 +747,19 @@ eval_input_reader: {
 </code></pre></div>
 
 <h2 id="from-researchobject_detectionlecgacy-copy-trainpy-to-research-folder">From research/object_detection/lecgacy/ copy train.py to research folder</h2>
-<h2 id="copy-deplyment-and-nets-folder-from-researchslim-into-research">Copy deplyment and nets folder from research/slim into research</h2>
+<p>legacy folder contains train.py as shown below - 
+<img alt="legacy folder" src="img/legacyFolder.png" /></p>
+<h2 id="copy-deployment-and-nets-folder-from-researchslim-into-research">Copy deployment and nets folder from research/slim into research</h2>
+<p>slim folder contains the following folders -</p>
+<p><img alt="slim folder" src="img/slimFolder.png" /></p>
 <h2 id="now-run-from-research-folder-this-will-start-ur-training-local-system-">NOW Run from research folder. This will start ur training local system-</h2>
 <div class="highlight"><pre><span></span><code>python train.py --logtostderr --train_dir=training/ --pipeline_config_path=training/faster_rcnn_inception_v2_coco.config
 </code></pre></div>
+
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Always run all the commands in research folder</p>
+</div>
                 
               
               
