@@ -284,6 +284,19 @@
     STEP 4. Mount the drive in Colab and initialize it with GPU.
   </a>
   
+    <nav class="md-nav" aria-label="STEP 4. Mount the drive in Colab and initialize it with GPU.">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#refer-the-following-video-" class="md-nav__link">
+    Refer the following video -
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -294,8 +307,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#step-6-in-the-notebook-import-os-and-set-a-path-to-the-research-directory-in-a-variable" class="md-nav__link">
-    STEP 6. In the notebook import os. And set a path to the research directory in a Variable.
+  <a href="#step-6-in-the-notebook-import-os-and-set-a-path-to-the-research-directory-in-a-variable-as-per-your-google-drive" class="md-nav__link">
+    STEP 6. In the notebook import os. And set a path to the research directory in a Variable as per your google drive.
   </a>
   
 </li>
@@ -336,8 +349,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#screenshot-of-begining-of-training-" class="md-nav__link">
-    Screenshot of begining of training-
+  <a href="#screenshot-of-begining-of-final-training-" class="md-nav__link">
+    Screenshot of begining of final training-
   </a>
   
 </li>
@@ -412,6 +425,19 @@
     STEP 4. Mount the drive in Colab and initialize it with GPU.
   </a>
   
+    <nav class="md-nav" aria-label="STEP 4. Mount the drive in Colab and initialize it with GPU.">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#refer-the-following-video-" class="md-nav__link">
+    Refer the following video -
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -422,8 +448,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#step-6-in-the-notebook-import-os-and-set-a-path-to-the-research-directory-in-a-variable" class="md-nav__link">
-    STEP 6. In the notebook import os. And set a path to the research directory in a Variable.
+  <a href="#step-6-in-the-notebook-import-os-and-set-a-path-to-the-research-directory-in-a-variable-as-per-your-google-drive" class="md-nav__link">
+    STEP 6. In the notebook import os. And set a path to the research directory in a Variable as per your google drive.
   </a>
   
 </li>
@@ -464,8 +490,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#screenshot-of-begining-of-training-" class="md-nav__link">
-    Screenshot of begining of training-
+  <a href="#screenshot-of-begining-of-final-training-" class="md-nav__link">
+    Screenshot of begining of final training-
   </a>
   
 </li>
@@ -501,17 +527,34 @@
 </div>
 <hr />
 <h3 id="step-2move-whole-tfod-folder-to-your-google-drive">STEP 2.Move whole tfod folder to your google drive.</h3>
+<p>verify that it should have atleast the below content-</p>
+<p><img alt="tfodContent" src="../img/tfodFolderContent.png" /></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>I'm using ssd mobilenet model that's I have ssd_mobilenet_v1_coco folder in the screnshot. You can upload your choice of model there.</p>
+</div>
+<details class="tip"><summary>Tip</summary><p>Since you have already did tfod setup in your local system and already copied <strong>utils</strong> and <strong>your model zoo folder</strong>  (i.e <strong>ssd_mobilenet..</strong> in my case). </p>
+<p>So if you want then you can only upload <strong>models-1.13.0</strong> , folder instead of all of them.</p>
+<p>Here I have uploaded all of them just to replicate the exact same steps in local and colab.</p>
+</details>
 <hr />
 <h3 id="step-3-open-a-jupyter-notebook-in-the-root-of-your-folder-structure-i-mean-just-inside-the-tfod-folder">STEP 3. Open a jupyter notebook in the root of your folder structure. I mean just inside the tfod folder.</h3>
+<p>As you can see in the below screenshot you can see <strong>t01.ipynb</strong>.</p>
+<p><img alt="tfodContent" src="../img/tfodFolderContent.png" /></p>
 <hr />
 <h3 id="step-4-mount-the-drive-in-colab-and-initialize-it-with-gpu">STEP 4. Mount the drive in Colab and initialize it with GPU.</h3>
+<h4 id="refer-the-following-video-">Refer the following video -</h4>
+<p style="text-align: center;">
+<iframe width="700" height="330" src="https://www.youtube.com/embed/6fWG4cxKqBM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</p>
+
 <hr />
 <h3 id="step-5-in-the-first-cell-run-the-following-command-so-that-it-selects-tensorflow-1-for-the-training-">STEP 5. In the first cell run the following command so that it selects TensorFlow 1 for the training-</h3>
 <div class="highlight"><pre><span></span><code>%tensorflow_version 1.x
 </code></pre></div>
 
 <hr />
-<h3 id="step-6-in-the-notebook-import-os-and-set-a-path-to-the-research-directory-in-a-variable">STEP 6. In the notebook import os. And set a path to the research directory in a Variable.</h3>
+<h3 id="step-6-in-the-notebook-import-os-and-set-a-path-to-the-research-directory-in-a-variable-as-per-your-google-drive">STEP 6. In the notebook import os. And set a path to the research directory in a Variable as per your google drive.</h3>
 <div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">os</span>
 <span class="hll"><span class="n">RESEARCH_DIR</span> <span class="o">=</span> <span class="s2">&quot;/content/drive/My Drive/PATH_TO_TFOD/tfod/models-1.13.0/research&quot;</span>
 </span></code></pre></div>
@@ -543,11 +586,16 @@
 </code></pre></div>
 
 <p><a href="https://medium.com/@shivamrawat_756/how-to-prevent-google-colab-from-disconnecting-717b88a128c0">reference</a> for point 10</p>
+<p>Refer the video below for final setup - </p>
+<p style="text-align: center;">
+<iframe width="700" height="330" src="https://www.youtube.com/embed/ZFsginiVzX8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</p>
+
 <hr />
 <h2 id="screenshot-of-colab-code-">Screenshot of colab code-</h2>
 <p><img alt="colab code" src="../img/colabOutPut.png" /></p>
 <hr />
-<h2 id="screenshot-of-begining-of-training-">Screenshot of begining of training-</h2>
+<h2 id="screenshot-of-begining-of-final-training-">Screenshot of begining of final training-</h2>
 <p><img alt="trainingStarted" src="../img/trainingStartedinColab.jpeg" /></p>
                 
               
